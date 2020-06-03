@@ -1,0 +1,10 @@
+/*.about-portrait {
+    background-image: url("../src/assets/images/portrait.jpg");
+    background-size: cover;
+    @include for-phone {
+        background-image: url("../src/assets/images/portrait.jpg");
+    }
+    @include for-tablet {
+        background-image: url("../src/assets/images/portrait.jpg");
+    }
+}*/

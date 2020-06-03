@@ -1,0 +1,10 @@
+#header {
+
+    & .main-menu{
+        @include font($size: 1.6rem, $family: $fontComfortaa, $weight: 400);
+    }
+
+    & .grid-row{
+        align-self: center;
+    };
+}
