@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Image, Menu, Container, Grid, Dropdown, Sticky } from 'semantic-ui-react';
-import logo from '../assets/images/bag-with-text.svg';
+import { Image, Menu, Grid, Dropdown,Radio } from 'semantic-ui-react';
+import logo from '../assets/images/bag-with-text.png';
 import { Link } from 'react-router-dom';
 
 
@@ -13,13 +13,12 @@ export default class HeaderDividing extends Component {
     const { activeItem } = this.state
 
     return (
-      <Container id="header">
-        <Grid stackable columns='equal'>
+        <Grid stackable columns='equal' className="header-grid" id="header">
           <Grid.Column floated='left' width={4} >
             <Image size='medium' verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" />
           </Grid.Column>
-          <Grid.Column floated='right' className="grid-row">
-            <Menu className="main-menu" widths={5} stackable secondary>
+          <Grid.Column floated='right' className="header-grid-row">
+            <Menu className="main-menu" widths={5} stackable secondary inverted>
               <Menu.Item
                 as={Link} to='/'
                 name='главная'
@@ -53,10 +52,10 @@ export default class HeaderDividing extends Component {
                 active={activeItem === '/contact' || activeItem === 'contact'}
                 onClick={this.handleItemClick}
               />
+              <Radio toggle label='Ru'/>
             </Menu>
           </Grid.Column>
         </Grid>
-      </Container>
 
     )
   }

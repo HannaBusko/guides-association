@@ -1,13 +1,10 @@
 import React, { Fragment } from 'react';
 
 import SimpleSlider from '../components/Slider';
-import AboutBlock from '../components/About';
-
 
 const HomePage = () => (
     <Fragment>
-        <SimpleSlider />
-        <AboutBlock />
+        <SimpleSlider/>
     </Fragment>
 );
 

@@ -1,35 +1,51 @@
 import React from "react";
 import Slider from "react-slick";
 
-//import jazz1 from '../assets/images/jazz1.jpg';
-import logo from '../assets/images/logo.svg';
+import slider1 from '../assets/images/nature1.jpg';
+import slider2 from '../assets/images/nature5.jpg';
+import slider3 from '../assets/images/nature2.jpg';
 
-const settings = {
-  dots: true,
-  fade: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  pauseOnHover: true,
-  autoplaySpeed: 6000
-};
-
-const SimpleSlider = ()=>(
-        <div className="slider-block">
-          <Slider {...settings}>
-            <div>
-              <img src={logo} alt="jazz"/>
-            </div>
-            <div>
-              <img src={logo} alt="jazz"/>
-            </div>
-            <div>
-              <img src={logo} alt="jazz" />
-            </div>
-          </Slider>
+const SimpleSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnHover: true,
+    autoplaySpeed: 6000
+  };
+  return (
+    <div className="carrousel_wrapper"
+    >
+      <Slider {...settings}>
+        <div>
+          <div
+            className="carrousel_image"
+            style={{
+              background: `url(${slider1})`
+            }}
+          />
         </div>
-      );
-
-  export default SimpleSlider;
+        <div>
+          <div
+            className="carrousel_image"
+            style={{
+              background: `url(${slider2})`
+            }}
+          />
+        </div>
+        <div>
+          <div
+            className="carrousel_image"
+            style={{
+              background: `url(${slider3})`
+            }}
+          />
+        </div>
+      </Slider>
+    </div>
+  );
+};
+export default SimpleSlider;
