@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Image, Menu, Grid, Dropdown,Radio } from 'semantic-ui-react';
-import logo from '../assets/images/bag-with-text.png';
+import { Image, Menu, Dropdown, Radio, Segment } from 'semantic-ui-react';
+import logo from '../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 
 
@@ -13,49 +13,74 @@ export default class HeaderDividing extends Component {
     const { activeItem } = this.state
 
     return (
-        <Grid stackable columns='equal' className="header-grid" id="header">
-          <Grid.Column floated='left' width={4} >
-            <Image size='medium' verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" />
-          </Grid.Column>
-          <Grid.Column floated='right' className="header-grid-row">
-            <Menu className="main-menu" widths={5} stackable secondary inverted>
-              <Menu.Item
-                as={Link} to='/'
-                name='главная'
-                active={activeItem === '/' || activeItem === 'home'}
-                onClick={this.handleItemClick} />
-              <Dropdown item text='Общество'>
-                <Dropdown.Menu>
-                  <Dropdown.Item text='О нас' as={Link} to='/association' 
-                    active={activeItem === '/association' || activeItem === 'association'}
-                    onClick={this.handleItemClick} />
-                  <Dropdown.Item text='Руководство' as={Link} to='/team' 
-                    active={activeItem === '/team' || activeItem === 'team'}
-                    onClick={this.handleItemClick} />
-                </Dropdown.Menu>
-              </Dropdown>
+      <div  className="header">
+        
+          <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo"/>
+        <div className="header-flex-row">
+          <Menu className="main-menu" stackable secondary inverted>
+            <Menu.Item
+              as={Link} to='/'
+              name='главная'
+              active={activeItem === '/' || activeItem === 'home'}
+              onClick={this.handleItemClick} />
+            <Dropdown item text='О нас'>
+              <Dropdown.Menu>
+                <Dropdown.Item text='История' as={Link} to='/history'
+                  active={activeItem === '/history' || activeItem === 'history'}
+                  onClick={this.handleItemClick} />
+                <Dropdown.Item text='Устав' as={Link} to='/rules'
+                  active={activeItem === '/rules' || activeItem === 'rules'}
+                  onClick={this.handleItemClick} />
+                <Dropdown.Item text='Руководство' as={Link} to='/team'
+                  active={activeItem === '/team' || activeItem === 'team'}
+                  onClick={this.handleItemClick} />
+              </Dropdown.Menu>
+            </Dropdown>
 
-              <Dropdown item text='Участники'>
-                <Dropdown.Menu>
-                  <Dropdown.Item text='Гиды-переводчики' as={Link} to='/guide-list' name="guide-list"
-                    active={activeItem === '/guide-list' || activeItem === 'guide-list'}
-                    onClick={this.handleItemClick} />
-                  <Dropdown.Item text='Экскурсоводы' as={Link} to='/tour-guide-list' name="tour-guide-list"
-                    active={activeItem === '/tour-guide-list' || activeItem === 'tour-guide-list'}
-                    onClick={this.handleItemClick} />
-                </Dropdown.Menu>
-              </Dropdown>
+            <Dropdown item text='Гиды'>
+              <Dropdown.Menu>
+                <Dropdown.Item text='Общая характеристика' as={Link} to='/guide-main' name="guide-main"
+                  active={activeItem === '/guide-main' || activeItem === 'guide-main'}
+                  onClick={this.handleItemClick} />
+                <Dropdown.Item text='Поиск гида' as={Link} to='/guide-search' name="guide-search"
+                  active={activeItem === '/guide-search' || activeItem === 'guide-search'}
+                  onClick={this.handleItemClick} />
+              </Dropdown.Menu>
+            </Dropdown>
 
-              <Menu.Item
-                as={Link} to='/contact'
-                name='контакты'
-                active={activeItem === '/contact' || activeItem === 'contact'}
-                onClick={this.handleItemClick}
-              />
-              <Radio toggle label='Ru'/>
-            </Menu>
-          </Grid.Column>
-        </Grid>
+            <Dropdown item text='Подготовка'>
+              <Dropdown.Menu>
+                <Dropdown.Item text='Аттестация' as={Link} to='/certification' name="certification"
+                  active={activeItem === '/certification' || activeItem === 'certification'}
+                  onClick={this.handleItemClick} />
+                <Dropdown.Item text='Повышение квалификации' as={Link} to='/professional-development' name="professional-development"
+                  active={activeItem === '/professional-development' || activeItem === 'professional-development'}
+                  onClick={this.handleItemClick} />
+                <Dropdown.Item text='Обучающие семинары' as={Link} to='/seminars' name="seminars"
+                  active={activeItem === '/seminars' || activeItem === 'seminars'}
+                  onClick={this.handleItemClick} />
+              </Dropdown.Menu>
+            </Dropdown>
+            <Menu.Item
+              as={Link} to='/news'
+              name='новости'
+              active={activeItem === '/news' || activeItem === 'news'}
+              onClick={this.handleItemClick}
+            />
+            <Menu.Item
+              as={Link} to='/contact'
+              name='контакты'
+              active={activeItem === '/contact' || activeItem === 'contact'}
+              onClick={this.handleItemClick}
+            />
+          </Menu>
+        </div>
+          <Segment className ="header-segment" compact>
+            <span>Ru</span>
+            <Radio toggle />
+            <span>En</span>
+          </Segment>
+      </div>
 
     )
   }

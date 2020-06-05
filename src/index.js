@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter, withRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { IntlProvider } from "react-intl";
+//import { IntlProvider } from "react-intl";
 
 import './index.css';
 
@@ -61,13 +61,11 @@ const AppWithRouter = withRouter(App);
 
 ReactDOM.render(
   <HashRouter>
-    <IntlProvider locale='Ru'>
       <Fragment>
         <HeaderDividing />
         <AppWithRouter />
         <ScrollToTopBtn />
       </Fragment>
-    </IntlProvider>
   </HashRouter>,
   document.getElementById("root")
 );

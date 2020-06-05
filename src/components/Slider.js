@@ -1,51 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import Slider from "react-slick";
+import PropTypes from 'prop-types';
 
-import slider1 from '../assets/images/nature1.jpg';
-import slider2 from '../assets/images/nature5.jpg';
-import slider3 from '../assets/images/nature2.jpg';
+class SimpleSlider extends Component {
 
-const SimpleSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    pauseOnHover: true,
-    autoplaySpeed: 6000
-  };
-  return (
-    <div className="carrousel_wrapper"
-    >
-      <Slider {...settings}>
-        <div>
-          <div
-            className="carrousel_image"
-            style={{
-              background: `url(${slider1})`
-            }}
-          />
-        </div>
-        <div>
-          <div
-            className="carrousel_image"
-            style={{
-              background: `url(${slider2})`
-            }}
-          />
-        </div>
-        <div>
-          <div
-            className="carrousel_image"
-            style={{
-              background: `url(${slider3})`
-            }}
-          />
-        </div>
-      </Slider>
-    </div>
-  );
+  render() {
+    const { images } = this.props;
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      pauseOnHover: true,
+      autoplaySpeed: 6000
+    };
+
+    return (
+      <div className="carrousel_wrapper">
+        <Slider {...settings}>
+          {images ? images.map((val, i) => (
+            <div key={i}>
+              <div 
+                className="carrousel_image"
+                style={{
+                  background: `url(${val.url})`
+                }} />
+            </div>)) : <span>"Loading..."</span>}
+        </Slider>
+      </div >
+    );
+  }
+}
+
+SimpleSlider.displayName = 'SimpleSlider';
+SimpleSlider.propTypes = {
+  images: PropTypes.array,
 };
 export default SimpleSlider;

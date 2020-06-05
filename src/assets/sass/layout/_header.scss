@@ -1,13 +1,49 @@
-#header {
-    position: absolute; 
+.header {
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
-    width: 98%;
+    width: 100%;
     text-align: center;
-    & .main-menu{
-        @include font($size: 2rem, $family: $fontMonserrat, $weight: 900);
+    & .main-menu {
+        @include for-tablet {
+            @include font($size: 1.2rem, $family: $fontMonserrat, $weight: 900);
+        }
+        @include for-desktop {
+            @include font($size: 1.4rem, $family: $fontMonserrat, $weight: 900);
+        }
+        @include for-desktop-up {
+            @include font($size: 2rem, $family: $fontMonserrat, $weight: 900);
+        }
     }
 
-    & .header-grid-row{
+    & .header-flex-row {
         align-self: center;
-    };
+    }
+    & .header-segment {
+        background: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        border: none;
+        color: white;
+        @include for-tablet {
+            @include font($size: 1.2rem, $family: $fontMonserrat, $weight: 700);
+        }
+        @include for-desktop {
+            @include font($size: 1.4rem, $family: $fontMonserrat, $weight: 700);
+        }
+        @include for-desktop-up {
+            @include font($size: 1.8rem, $family: $fontMonserrat, $weight: 700);
+        }
+        & span {
+            padding: 0 20px;
+        }
+    }
+}
+
+.logo {
+    width: 10%;
 }
