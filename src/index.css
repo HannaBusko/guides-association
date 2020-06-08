@@ -162,12 +162,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-.example-enter {
+.main-transition-enter {
   opacity: 0.01;
   transform: translateY(10px);
 }
 
-.example-enter.example-enter-active {
+.main-transition-enter.main-transition-enter-active {
   opacity: 1;
   transform: none;
   transition-property: opacity, transform;
@@ -176,12 +176,12 @@ h2 {
   transition-delay: 500ms;
 }
 
-.example-exit {
+.main-transition-exit {
   opacity: 1;
   transform: none;
 }
 
-.example-exit.example-exit-active {
+.main-transition-exit.main-transition-exit-active {
   opacity: 0.01;
   transform: translateY(10px);
   transition-property: opacity, transform;
@@ -268,23 +268,19 @@ h2 {
 .logo {
   width: 10%;
 }
-
-.vertical-menu {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  z-index: 3;
-  display: block;
-  max-width: 80% !important;
-  margin-top: 0px;
-  padding-top: 100px;
-  padding-right: 0px;
-  align-items: stretch;
-  background-color: #001698;
+@media (max-width: 767px) {
+  .logo {
+    width: 20%;
+  }
 }
-.vertical-menu .vertical-menu-active {
-  transform: translateX(0%);
+
+.ui.menu.vertical-menu {
+  font-size: 2rem;
+  font-family: "Montserrat Alternates", "Verdana", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 70%;
 }
 
 .slider-block {
@@ -476,11 +472,31 @@ h2 {
   height: calc(100vh*0.8);
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .carrousel_wrapper {
+    height: calc(100vh*0.4);
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .carrousel_wrapper {
+    height: calc(100vh*0.6);
+  }
+}
 
 .carrousel_image {
   height: calc(100vh*0.8);
   background-size: cover !important;
   background-position: center !important;
+}
+@media (max-width: 767px) {
+  .carrousel_image {
+    height: calc(100vh*0.4);
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .carrousel_image {
+    height: calc(100vh*0.6);
+  }
 }
 
 /* Arrows */

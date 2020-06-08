@@ -197,12 +197,24 @@
 .carrousel_wrapper {
     height:calc(100vh*0.8);
     overflow: hidden;
+    @include for-phone{
+        height:calc(100vh*0.4);
+    }
+    @include for-tablet{
+        height:calc(100vh*0.6) ;
+    }
 }
 
 .carrousel_image {
     height: calc(100vh*0.8);
     background-size: cover !important;
     background-position: center !important;
+    @include for-phone {
+        height:calc(100vh*0.4);
+    }
+    @include for-tablet{
+        height:calc(100vh*0.6) ;
+    }
 }
 
 /* Arrows */

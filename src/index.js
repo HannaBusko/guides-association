@@ -43,7 +43,7 @@ class App extends React.Component {
           <CSSTransition
             key={currentKey}
             timeout={pageTransitionsDuration}
-            classNames="example"
+            classNames="main-transition"
             mountOnEnter={true}
             unmountOnExit={true}
           >

@@ -43,33 +43,19 @@
         }
     }
 
-    & .header-button {
+    & .header-button {   
         margin: 20px;
     }
 }
 
 .logo {
-    width: 10%;
+    width: 10%; 
+    @include for-phone{
+        width: 20%;
+    } 
 }
-
-.vertical-menu {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 3;
-    display: block;
-    max-width: 80% !important;
-    margin-top: 0px;
-    padding-top: 100px;
-    padding-right: 0px;
-    align-items: stretch;
-    background-color: #001698;
-   // transform: translateX(-100%);
-   // transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-    & .vertical-menu-active{
-        transform: translateX(0%); 
-    }
-}
-
+.ui.menu.vertical-menu{
+    @include font($size:2rem, $family: $fontMonserrat, $weight: 700);
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 70%;
+ }

@@ -4,7 +4,7 @@ import { bool, func } from 'prop-types';
 
 const BurgerButton = ({ menuOpen, setMenuOpen }) => {
     return (
-        <Button icon='bars' size='massive' className={{menuOpen} ? 'header-button header-button-active' : 'header-button'} onClick={() => setMenuOpen(!menuOpen)} />
+        <Button inverted icon='bars' size='massive' className={{menuOpen} ? 'header-button header-button-active' : 'header-button'} onClick={() => setMenuOpen(!menuOpen)} />
     );
 
 };

@@ -9,14 +9,12 @@ h2 {
     margin-bottom: 20px;
 }
 
-.example-enter {
+.main-transition-enter {
     opacity: 0.01;
     transform: translateY(10px);
   }
  
-  .example-enter.example-enter-active {
-    //opacity: 1;
-    ///transition: opacity 500ms ease-in;
+  .main-transition-enter.main-transition-enter-active {
     opacity: 1;
     transform: none;
   
@@ -28,12 +26,12 @@ h2 {
  
  
   
-  .example-exit {
+  .main-transition-exit {
     opacity: 1;
     transform: none;
   }
   
-  .example-exit.example-exit-active {
+  .main-transition-exit.main-transition-exit-active {
     opacity: 0.01;
     transform: translateY(10px);
   

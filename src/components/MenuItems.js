@@ -10,7 +10,7 @@ class MenuItems extends Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
     render() {
-        const { activeItem } = this.state
+        const { activeItem } = this.state;
 
         return (
             <Fragment>
@@ -20,7 +20,7 @@ class MenuItems extends Component {
                     active={activeItem === '/' || activeItem === 'home'}
                     onClick={this.handleItemClick} />
                 <Dropdown item text='О нас'>
-                    <Dropdown.Menu>
+                    <Dropdown.Menu direction='left'>
                         <Dropdown.Item text='История' as={Link} to='/history'
                             active={activeItem === '/history' || activeItem === 'history'}
                             onClick={this.handleItemClick} />
@@ -34,8 +34,8 @@ class MenuItems extends Component {
                 </Dropdown>
 
                 <Dropdown item text='Гиды'>
-                    <Dropdown.Menu>
-                        <Dropdown.Item text='Общая характеристика' as={Link} to='/guide-main' name="guide-main"
+                    <Dropdown.Menu direction='left'>
+                        <Dropdown.Item text='Общая характеристика' as={Link} to='/guide-main' name="guide-main"  
                             active={activeItem === '/guide-main' || activeItem === 'guide-main'}
                             onClick={this.handleItemClick} />
                         <Dropdown.Item text='Поиск гида' as={Link} to='/guide-search' name="guide-search"
@@ -45,7 +45,7 @@ class MenuItems extends Component {
                 </Dropdown>
 
                 <Dropdown item text='Подготовка'>
-                    <Dropdown.Menu>
+                    <Dropdown.Menu direction='left'>
                         <Dropdown.Item text='Аттестация' as={Link} to='/certification' name="certification"
                             active={activeItem === '/certification' || activeItem === 'certification'}
                             onClick={this.handleItemClick} />
