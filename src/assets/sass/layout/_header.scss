@@ -20,7 +20,7 @@
             @include font($size: 2rem, $family: $fontMonserrat, $weight: 900);
         }
     }
-
+    
     & .header-flex-row {
         align-self: center;
     }
@@ -42,8 +42,34 @@
             padding: 0 20px;
         }
     }
+
+    & .header-button {
+        margin: 20px;
+    }
 }
 
 .logo {
     width: 10%;
 }
+
+.vertical-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3;
+    display: block;
+    max-width: 80% !important;
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-right: 0px;
+    align-items: stretch;
+    background-color: #001698;
+   // transform: translateX(-100%);
+   // transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    & .vertical-menu-active{
+        transform: translateX(0%); 
+    }
+}
+

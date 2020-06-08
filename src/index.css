@@ -261,9 +261,30 @@ h2 {
 .header .header-segment span {
   padding: 0 20px;
 }
+.header .header-button {
+  margin: 20px;
+}
 
 .logo {
   width: 10%;
+}
+
+.vertical-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 3;
+  display: block;
+  max-width: 80% !important;
+  margin-top: 0px;
+  padding-top: 100px;
+  padding-right: 0px;
+  align-items: stretch;
+  background-color: #001698;
+}
+.vertical-menu .vertical-menu-active {
+  transform: translateX(0%);
 }
 
 .slider-block {
