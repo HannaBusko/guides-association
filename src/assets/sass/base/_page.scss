@@ -8,13 +8,17 @@ body {
         font-size: 9px;
     }
 }
-
+body{
+    height: 100%;
+}
 @-ms-viewport {
     width: device-width;
 }
 
 html {
     box-sizing: border-box;
+    position:relative; 
+    min-height:100%;
 }
 
 *,

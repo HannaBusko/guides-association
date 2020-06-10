@@ -8,6 +8,7 @@ import './index.css';
 
 import HomePage from '../src/pages/index';
 import HeaderDividing from './components/Header';
+import FooterBlock from './components/Footer';
 
 //import Social from './components/Social';
 import ScrollToTopBtn from "./components/ScrollToTop";
@@ -66,6 +67,7 @@ const Layout = () => {
         <HeaderDividing />
         <AppWithRouter />
         <ScrollToTopBtn />
+        <FooterBlock />
       </I18nextProvider>
     </Fragment>
   );

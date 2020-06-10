@@ -1,0 +1,28 @@
+.footer {
+    min-height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #222222;
+    &-copyright {
+        width: 100%;
+        min-height: 30%;
+        position: absolute;
+        bottom: 0;
+        .ui.segment {
+            text-align: center;
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.32) !important;
+            span {
+                @include font($size: 2rem, $family: $fontComfortaa, $weight: 900);
+                @include for-small-phone {
+                    @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 700);
+                }
+            }
+        }
+
+        .social-list {
+            padding-left: 2vw;
+        }
+    }
+}
