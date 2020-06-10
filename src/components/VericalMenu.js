@@ -6,13 +6,14 @@ import { bool, func } from 'prop-types';
 const VerticalMenuBlock = ({ menuOpen, setMenuOpen }) => {
 
     return (
-        <Sidebar as={Menu} className="vertical-menu"
+        <Sidebar as={Menu}
+            className="vertical-menu"
             animation='overlay'
             inverted
             onHide={() => setMenuOpen(false)}
             vertical
             visible={menuOpen}
-            >
+        >
             <MenuItems />
         </Sidebar>
     )

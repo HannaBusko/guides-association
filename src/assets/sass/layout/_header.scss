@@ -58,4 +58,5 @@
     @include font($size:2rem, $family: $fontMonserrat, $weight: 700);
     background-color: rgba(0, 0, 0, 0.8);
     max-width: 70%;
+    text-align: left;
  }

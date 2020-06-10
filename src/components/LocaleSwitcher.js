@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 
 const LanguageRadio = () => {
     const { i18n } = useTranslation();
-   // const actualLang = language === "ru" ? false : true;<Radio onChange={() => setLanguage(actualLang ? "ru" :"en")} toggle />
     return (
         <Fragment>
             <span>Ru</span>

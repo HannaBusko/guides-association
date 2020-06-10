@@ -31,14 +31,18 @@ class HeaderDividing extends Component {
   render() {
     const isPositionVertical = this.state.isPositionVertical;
     return (
-      <Fragment>
 
+      <div className="header">
         {isPositionVertical ?
           <VerticalMenu />
           :
           <HorizontalMenu />
         }
-      </Fragment>
+        <Segment className="header-segment" compact>
+          <LanguageRadio />
+        </Segment>
+      </div>
+
     )
   }
 }
@@ -50,15 +54,10 @@ const VerticalMenu = () => {
 
   return (
     <Fragment>
-      <div className="header">
-        <div className="header-flex-row">
-          <BurgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        </div>
-        <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo" />
-        <Segment className="header-segment" compact>
-          <LanguageRadio />
-        </Segment>
+      <div className="header-flex-row">
+        <BurgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
+      <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo" />
       <VerticalMenuBlock menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </Fragment>
   );
@@ -66,17 +65,14 @@ const VerticalMenu = () => {
 
 const HorizontalMenu = () => {
   return (
-    <div className="header">
+    <Fragment>
       <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo" />
       <div className="header-flex-row">
         <Menu className="main-menu" secondary inverted>
           <MenuItems />
         </Menu>
       </div>
-      <Segment className="header-segment" compact>
-        <LanguageRadio />
-      </Segment>
-    </div>
+    </Fragment>
   );
 }
 export default HeaderDividing;
