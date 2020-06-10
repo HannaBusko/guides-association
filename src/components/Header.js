@@ -1,11 +1,12 @@
 import React, { Component, Fragment, useState } from 'react';
-import { Image, Radio, Segment,Menu } from 'semantic-ui-react';
+import { Image, Segment, Menu } from 'semantic-ui-react';
 import logo from '../assets/images/logo.svg';
 
 import MenuItems from './MenuItems';
 
 import VerticalMenuBlock from './VericalMenu';
 import BurgerButton from './Burger';
+import LanguageRadio from './LocaleSwitcher'
 
 class HeaderDividing extends Component {
   constructor() {
@@ -14,6 +15,7 @@ class HeaderDividing extends Component {
       isPositionVertical: (window.innerWidth <= 767) ? true : false
     };
     this.updateMenuType = this.updateMenuType.bind(this);
+
   }
   componentDidMount() {
     window.addEventListener("resize", this.updateMenuType);
@@ -30,6 +32,7 @@ class HeaderDividing extends Component {
     const isPositionVertical = this.state.isPositionVertical;
     return (
       <Fragment>
+
         {isPositionVertical ?
           <VerticalMenu />
           :
@@ -42,6 +45,7 @@ class HeaderDividing extends Component {
 
 
 const VerticalMenu = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -52,9 +56,7 @@ const VerticalMenu = () => {
         </div>
         <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo" />
         <Segment className="header-segment" compact>
-          <span>Ru</span>
-          <Radio toggle />
-          <span>En</span>
+          <LanguageRadio />
         </Segment>
       </div>
       <VerticalMenuBlock menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -72,9 +74,7 @@ const HorizontalMenu = () => {
         </Menu>
       </div>
       <Segment className="header-segment" compact>
-        <span>Ru</span>
-        <Radio toggle />
-        <span>En</span>
+        <LanguageRadio />
       </Segment>
     </div>
   );

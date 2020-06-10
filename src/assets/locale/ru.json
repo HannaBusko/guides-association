@@ -1,0 +1,16 @@
+{
+    "main_menu": "Главная",
+    "menu_about": "О нас",
+    "menu_history":"История",
+    "menu_rules":"Устав",
+    "menu_team":"Руководство",
+    "menu_guide":"Гиды",
+    "menu_guide-main":"Общая характеристика",
+    "menu_guide-search":"Поиск гида",
+    "menu_trainings":"Подготовка",
+    "menu_certification":"Аттестация",
+    "menu_professional-development":"Повышение квалификации",
+    "menu_seminars":"Обучающие семинары",
+    "menu_news":"Новости",
+    "menu_contact":"Контакты"
+}

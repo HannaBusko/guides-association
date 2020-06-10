@@ -3,18 +3,17 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter, withRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-//import { IntlProvider } from "react-intl";
 
 import './index.css';
 
 import HomePage from '../src/pages/index';
 import HeaderDividing from './components/Header';
-/*import { NatureGallery, PartyGallery } from '../src/pages/gallery';
 
-import Social from './components/Social';*/
+//import Social from './components/Social';
 import ScrollToTopBtn from "./components/ScrollToTop";
 
-
+import { I18nextProvider } from 'react-i18next';
+import i18n from './components/i18n';
 
 
 const pageTransitionsDuration = {
@@ -59,14 +58,25 @@ class App extends React.Component {
 
 const AppWithRouter = withRouter(App);
 
-ReactDOM.render(
-  <HashRouter>
-      <Fragment>
+const Layout = () => {
+
+  return (
+    <Fragment>
+      <I18nextProvider i18n={i18n}>
         <HeaderDividing />
         <AppWithRouter />
         <ScrollToTopBtn />
-      </Fragment>
-  </HashRouter>,
+      </I18nextProvider>
+    </Fragment>
+  );
+}
+
+ReactDOM.render(
+
+  <HashRouter>
+    <Layout />
+  </HashRouter>
+  ,
   document.getElementById("root")
 );
 
