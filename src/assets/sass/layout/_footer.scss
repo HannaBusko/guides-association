@@ -1,13 +1,13 @@
-.footer {
+.footer-wrapper {
     min-height: 10%;
-    width: 100%;
-    position: absolute;
+    // width: 100%;
+    // position: absolute;
     bottom: 0;
     background-color: #222222;
-    &-copyright {
-        width: 100%;
+    .footer-copyright {
+        //width: 100%;
         min-height: 30%;
-        position: absolute;
+        // position: absolute;
         bottom: 0;
         .ui.segment {
             text-align: center;
@@ -23,6 +23,58 @@
 
         .social-list {
             padding-left: 2vw;
+        }
+    }
+
+    .footer {
+        @extend %horizontal-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1%;
+        .list-item {
+            padding-right: 4%;
+        }
+        .list > a.item,
+        .list > .item {
+            margin-left: 0;
+            color: aliceblue;
+            @include font($size: 1.2rem, $family: $fontComfortaa, $weight: 700);
+            @include for-desktop{
+                @include font($size: 1.3rem, $family: $fontComfortaa, $weight: 700);
+            }
+            @include for-desktop-up{
+                @include font($size: 1.4rem, $family: $fontComfortaa, $weight: 700);
+            }
+            @include for-small-phone {
+                @include font($size: 1rem, $family: $fontComfortaa, $weight: 400);
+            }
+        }
+    }
+
+    .footer-menu {
+        
+        @extend %horizontal-flex;
+        @include for-tablet {
+            flex-basis: 100%;
+            justify-content: space-around;
+        }
+
+        flex-wrap: wrap;
+        .list,
+        .list > a.item,
+        .list > .item {
+            color: darkgrey;
+        }
+        .footer-info {
+            max-width: 25%;
+        }
+
+        .ui.horizontal.list {
+            display: flex !important;
+            flex-wrap: wrap;
+            & .list > .item {
+                padding-left: 0px !important;
+            }
         }
     }
 }

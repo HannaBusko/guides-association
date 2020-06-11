@@ -1,9 +1,7 @@
 .header {
     margin: 0;
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %horizontal-flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
