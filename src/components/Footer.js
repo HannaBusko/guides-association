@@ -43,9 +43,9 @@ const FooterBlock = () => {
                 </div>
                 <div className="footer-info">
                     <List>
-                        <List.Item>РОО "Белорусское общество <br />экскурсоводов и гидов-переводчиков" </List.Item>
-                        <List.Item>г. Минск,ул. Фридриха Энгельса, д.34А-2, каб. 623 </List.Item>
-                        <List.Item>УНП 805004164 </List.Item>
+                        <List.Item>{t('title_part1')}<br />{t('title_part2')} </List.Item>
+                        <List.Item>{t('adress')} </List.Item>
+                        <List.Item>{t('unp')}</List.Item>
                     </List>
                 </div>
             </div>

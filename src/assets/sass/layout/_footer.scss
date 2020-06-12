@@ -28,6 +28,9 @@
 
     .footer {
         @extend %horizontal-flex;
+        @include for-phone{
+            flex-direction: column-reverse;
+        }
         align-items: center;
         flex-wrap: wrap;
         padding: 1%;
@@ -38,15 +41,9 @@
         .list > .item {
             margin-left: 0;
             color: aliceblue;
-            @include font($size: 1.2rem, $family: $fontComfortaa, $weight: 700);
-            @include for-desktop{
-                @include font($size: 1.3rem, $family: $fontComfortaa, $weight: 700);
-            }
+            @include font($size: 1.3rem, $family: $fontComfortaa, $weight: 700);
             @include for-desktop-up{
                 @include font($size: 1.4rem, $family: $fontComfortaa, $weight: 700);
-            }
-            @include for-small-phone {
-                @include font($size: 1rem, $family: $fontComfortaa, $weight: 400);
             }
         }
     }
@@ -74,6 +71,12 @@
             flex-wrap: wrap;
             & .list > .item {
                 padding-left: 0px !important;
+                @include for-phone{
+                   padding-bottom: 10px;
+                }
+            }
+            @include for-phone{
+                justify-content: center;
             }
         }
     }
