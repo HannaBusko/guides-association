@@ -49,12 +49,22 @@
   src: local("Montserrat Alternates Black"), local("MontserratAlternates-Black"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.woff2") format("woff2"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.woff") format("woff"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.ttf") format("truetype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.svg#MontserratAlternates") format("svg");
   /* Legacy iOS */
 }
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
 .block, h2 {
   border-bottom: 4px double rgba(34, 36, 38, 0.322);
   margin-bottom: 20px;
 }
 
-.footer-wrapper .footer-menu, .footer-wrapper .footer, .header {
+.footer-wrapper .footer-menu, .footer-wrapper .footer, .header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -143,9 +153,6 @@ body {
   }
 }
 
-/*body{
-    height: 100%;
-}*/
 @-ms-viewport {
   width: device-width;
 }
@@ -198,7 +205,7 @@ h2 {
   transition-duration: 200ms;
 }
 
-.header {
+.header-wrapper {
   margin: 0;
   position: absolute;
   align-items: center;
@@ -208,7 +215,7 @@ h2 {
   text-align: center;
 }
 @media (max-width: 991px) and (min-width: 768px) {
-  .header .main-menu {
+  .header-wrapper .main-menu {
     font-size: 1.2rem;
     font-family: "Montserrat Alternates", "Verdana", sans-serif;
     font-weight: 900;
@@ -216,7 +223,7 @@ h2 {
   }
 }
 @media (min-width: 992px) {
-  .header .main-menu {
+  .header-wrapper .main-menu {
     font-size: 1.4rem;
     font-family: "Montserrat Alternates", "Verdana", sans-serif;
     font-weight: 900;
@@ -224,24 +231,24 @@ h2 {
   }
 }
 @media (min-width: 1225px) {
-  .header .main-menu {
+  .header-wrapper .main-menu {
     font-size: 2rem;
     font-family: "Montserrat Alternates", "Verdana", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
 }
-.header .header-flex-row {
+.header-wrapper .header-flex-row {
   align-self: center;
 }
-.header .header-segment {
+.header-wrapper .header-segment {
   background: rgba(0, 0, 0, 0);
   box-shadow: none;
   border: none;
   color: white;
 }
 @media (max-width: 991px) and (min-width: 768px) {
-  .header .header-segment {
+  .header-wrapper .header-segment {
     font-size: 1.2rem;
     font-family: "Montserrat Alternates", "Verdana", sans-serif;
     font-weight: 700;
@@ -249,7 +256,7 @@ h2 {
   }
 }
 @media (min-width: 992px) {
-  .header .header-segment {
+  .header-wrapper .header-segment {
     font-size: 1.4rem;
     font-family: "Montserrat Alternates", "Verdana", sans-serif;
     font-weight: 700;
@@ -257,17 +264,17 @@ h2 {
   }
 }
 @media (min-width: 1225px) {
-  .header .header-segment {
+  .header-wrapper .header-segment {
     font-size: 1.8rem;
     font-family: "Montserrat Alternates", "Verdana", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 }
-.header .header-segment span {
+.header-wrapper .header-segment span {
   padding: 0 20px;
 }
-.header .header-button {
+.header-wrapper .header-button {
   margin: 20px;
 }
 
@@ -710,6 +717,38 @@ h2 {
 }
 .scroll-to-top .ui.button {
   min-height: 3em;
+}
+
+.route-wrapper {
+  display: grid;
+  max-width: 50%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  /* .ui.card>.content{
+       line-height: 1.5;
+       @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+       text-align: justify;
+   } & .ui.card{
+       margin-bottom: 0;
+       margin-top: 0;
+   }*/
+}
+.route-wrapper .route-left {
+  justify-self: end;
+  align-self: stretch;
+}
+.route-wrapper .route-right {
+  justify-self: start;
+  align-self: stretch;
+}
+.route-wrapper .route-content {
+  padding: 10px;
 }
 
 .footer-wrapper {

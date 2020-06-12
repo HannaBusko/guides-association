@@ -1,14 +1,16 @@
 import React, { Fragment } from 'react';
 
 import SimpleSlider from '../components/Slider';
+import RoutesBlock from '../components/Routes';
 
-const img_set = [
+const img_set = [ 
+     {
+        url: require('../assets/images/slider/2.jpg'),
+    },
     {
         url: require('../assets/images/slider/1.jpg'),
     },
-    {
-        url: require('../assets/images/slider/2.jpg'),
-    },
+  
     {
         url: require('../assets/images/slider/3.jpg'),
     },
@@ -32,6 +34,7 @@ const img_set = [
 const HomePage = () => (
     <Fragment>
         <SimpleSlider images={img_set} />
+        <RoutesBlock />
     </Fragment>
 );
 

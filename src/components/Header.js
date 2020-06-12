@@ -32,7 +32,7 @@ class HeaderDividing extends Component {
     const isPositionVertical = this.state.isPositionVertical;
     return (
 
-      <div className="header">
+      <div className="header-wrapper">
         {isPositionVertical ?
           <VerticalMenu />
           :

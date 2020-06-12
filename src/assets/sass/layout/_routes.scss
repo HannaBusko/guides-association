@@ -1,0 +1,33 @@
+.route-wrapper{
+    display: grid;
+    max-width: 50%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.5;
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+        text-align: justify;
+   // @include font($size: 1.4rem !important, $family: $fontMonserrat !important, $weight: 400 !important);
+   /* .ui.card>.content{
+        line-height: 1.5;
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+        text-align: justify;
+    } & .ui.card{
+        margin-bottom: 0;
+        margin-top: 0;
+    }*/
+
+    & .route-left{
+        justify-self: end;
+        align-self: stretch;
+    }
+    & .route-right{
+        justify-self: start;
+        align-self: stretch;
+    }
+
+    .route-content{
+        padding: 10px;
+    }
+   
+   
+}
