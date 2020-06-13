@@ -1,33 +1,49 @@
-.route-wrapper{
+.route-wrapper {
     display: grid;
-    max-width: 50%;
+    @include for-tablet {
+        max-width: 99%;
+    } 
+    @include for-desktop{
+        max-width: 85%;
+    }
+    @include for-desktop-up {
+        max-width: 70%;
+    }
+   
+  
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
+    
     line-height: 1.5;
-        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
-        text-align: justify;
-   // @include font($size: 1.4rem !important, $family: $fontMonserrat !important, $weight: 400 !important);
-   /* .ui.card>.content{
-        line-height: 1.5;
-        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
-        text-align: justify;
-    } & .ui.card{
-        margin-bottom: 0;
-        margin-top: 0;
-    }*/
+    @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+    @include for-phone{
+        @include font($size: 1rem, $family: $fontRoboto, $weight: 400);
+    }
+    text-align: justify;
 
-    & .route-left{
+    & .route-left {
         justify-self: end;
         align-self: stretch;
     }
-    & .route-right{
+    & .route-right {
         justify-self: start;
         align-self: stretch;
     }
 
-    .route-content{
+    .route-content {
         padding: 10px;
     }
-   
-   
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: calc(100vh * 0.2);
+        @include for-desktop-up {
+            height: calc(100vh * 0.35);
+        }
+    }
+
+    .ui.segment{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }

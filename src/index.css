@@ -721,7 +721,6 @@ h2 {
 
 .route-wrapper {
   display: grid;
-  max-width: 50%;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   line-height: 1.5;
@@ -730,14 +729,29 @@ h2 {
   font-weight: 400;
   font-style: normal;
   text-align: justify;
-  /* .ui.card>.content{
-       line-height: 1.5;
-       @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
-       text-align: justify;
-   } & .ui.card{
-       margin-bottom: 0;
-       margin-top: 0;
-   }*/
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .route-wrapper {
+    max-width: 99%;
+  }
+}
+@media (min-width: 992px) {
+  .route-wrapper {
+    max-width: 85%;
+  }
+}
+@media (min-width: 1225px) {
+  .route-wrapper {
+    max-width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .route-wrapper {
+    font-size: 1rem;
+    font-family: "Roboto", "Verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 .route-wrapper .route-left {
   justify-self: end;
@@ -749,6 +763,20 @@ h2 {
 }
 .route-wrapper .route-content {
   padding: 10px;
+}
+.route-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100vh * 0.2);
+}
+@media (min-width: 1225px) {
+  .route-wrapper img {
+    height: calc(100vh * 0.35);
+  }
+}
+.route-wrapper .ui.segment {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-wrapper {
