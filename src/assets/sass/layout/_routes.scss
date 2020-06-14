@@ -1,26 +1,23 @@
 .route-wrapper {
-    display: grid;
+    padding: 5vw 0;
+    margin: 0 auto;
+
     @include for-tablet {
-        max-width: 99%;
-    } 
-    @include for-desktop{
+        max-width: 97%;
+    }
+    @include for-desktop {
         max-width: 85%;
     }
     @include for-desktop-up {
         max-width: 70%;
     }
-   
-  
-    margin: 0 auto;
+    text-align: justify;
+}
+
+.route-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     
-    line-height: 1.5;
-    @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
-    @include for-phone{
-        @include font($size: 1rem, $family: $fontRoboto, $weight: 400);
-    }
-    text-align: justify;
-
     & .route-left {
         justify-self: end;
         align-self: stretch;
@@ -42,8 +39,16 @@
         }
     }
 
-    .ui.segment{
+    a{
+        color: black;
+    }
+    .ui.segment {
         margin-top: 0;
         margin-bottom: 0;
+        line-height: 1.5;
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+        @include for-phone {
+            @include font($size: 1rem, $family: $fontRoboto, $weight: 400);
+        }
     }
 }

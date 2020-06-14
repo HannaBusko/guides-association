@@ -48,7 +48,7 @@ export default class ScrollToTop extends Component {
       <div className="scroll-to-top">
         {is_visible && (
           <div onClick={() => this.scrollToTop()}>
-            <Button icon labelPosition='right' size="huge">
+            <Button compact icon labelPosition='right' size="huge">
               Up <Icon name='arrow up' />
             </Button>
           </div>
