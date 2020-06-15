@@ -658,6 +658,33 @@ h4 {
   }
 }
 
+.block-grid {
+  margin: 0 auto;
+  padding-top: 2%;
+  display: grid;
+  text-align: center;
+}
+.block-grid div {
+  justify-self: center;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.block-grid h4 {
+  padding-top: 5px;
+}
+
+.about-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 767px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .scroll-to-top {
   opacity: 0.8;
   position: fixed;
@@ -671,30 +698,6 @@ h4 {
 }
 .scroll-to-top .ui.button {
   min-height: 3em;
-}
-
-.about-grid {
-  margin: 0 auto;
-  padding-top: 2%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.about-grid div {
-  justify-self: center;
-  line-height: 1.5;
-  font-size: 1.4rem;
-  font-family: "Roboto", "Verdana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.about-grid h4 {
-  padding-top: 5px;
 }
 
 .route-grid {
@@ -741,6 +744,19 @@ h4 {
     font-weight: 400;
     font-style: normal;
   }
+}
+
+.reasons-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 767px) {
+  .reasons-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.reasons-grid .reasons-content {
+  text-align: justify;
+  padding: 15px;
 }
 
 .footer-wrapper {
