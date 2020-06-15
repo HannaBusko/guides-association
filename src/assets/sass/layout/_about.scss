@@ -1,0 +1,18 @@
+.about-grid {
+    margin: 0 auto;
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include for-phone{
+        grid-template-columns: 1fr 1fr;
+    }
+    text-align: center;
+    & div {
+        justify-self: center;
+        line-height: 1.5;
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+    }
+    h4{
+        padding-top: 5px;
+    }
+}

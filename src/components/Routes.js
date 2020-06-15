@@ -11,43 +11,43 @@ import { useTranslation } from "react-i18next";
 const RoutesBlock = () => {
     const { t } = useTranslation();
     return (
-        <div className="route-wrapper">
-            <h2>Туристическая мозаика Беларуси</h2>
+        <div className="block-wrapper">
+            <h2>{t('routes_header')}</h2>
             <div className="route-grid">
                 <Segment raised as='a'
                     href='https://museumkossovo.by/ru/'
                     rel= 'noopener noreferrer'
                     target='_blank'
-                    title= "Переход на официальную страницу Музея-усадьбы Тадеуша Костюшко">
+                    title= {t('architecture_link')} >
                     <div className="route-left">
                         <div className="route-content">
                             <h3> {t('architecture_header')}</h3>
                             <p>{t('architecture_descr')}</p>
                         </div>
-                        <img alt='Дворцовый комплекс Сапег в Ружанах' src={architecture} title="Дворцовый комплекс Сапег в Ружанах" />
+                        <img alt={t('architecture_img')} src={architecture} title={t('architecture_img')} />
                     </div>
                 </Segment>
                 <Segment raised as='a'
                     href='https://vetliva.com/tourism/what-to-see'
                     rel= 'noopener noreferrer'
                     target='_blank'
-                    title= "Переход на страницу с турами по Беларуси">
+                    title= {t('relygy_link')}>
                     <div className="route-right">
                         <div className="route-content">
                             <h3>{t('relygy_header')}</h3>
                             <p>{t('relygy_descr')}</p>
 
                         </div>
-                        <img alt='Церковь св. Михаила Архангела в д. Рубель' src={religy} title="Церковь св. Михаила Архангела в д. Рубель" />
+                        <img alt={t('relygy_img')}  src={religy} title={t('relygy_img')}  />
                     </div>
                 </Segment>
                 <Segment raised as='a'
                     href='http://belaz.by/about/industrial-tourism/'
                     rel= 'noopener noreferrer'
                     target='_blank'
-                    title= "Переход на официальную страницу ОАО БелАЗ">
+                    title= {t('industry_link')}>
                     <div className="route-right">
-                        <img alt=' ОАО БелАЗ в Жодино' src={industry} title="ОАО БелАЗ в Жодино" />
+                        <img alt={t('industry_img')} src={industry} title={t('industry_img')} />
                         <div className="route-content">
                             <h3>{t('industry_header')}</h3>
                             <p>{t('industry_descr')}</p>
@@ -59,9 +59,9 @@ const RoutesBlock = () => {
                     href='https://www.wildlife.by/directory/zakazniki/respublikanskiy-landshaftnyy-zakaznik-elnya/'
                     rel= 'noopener noreferrer'
                     target='_blank'
-                    title= 'Переход на страницу с информацией о Республиканском ландшафтном заказнике "Ельня"'>
+                    title= {t('nature_link')}>
                     <div className="route-left">
-                        <img alt='Меловые карьеры в Волковысском районе' src={nature} title="Меловые карьеры в Волковысском районе" />
+                        <img alt={t('nature_img')} src={nature} title={t('nature_img')} />
                         <div className="route-content">
                             <h3>{t('nature_header')}</h3>
                             <p>{t('nature_descr')}</p>

@@ -1,18 +1,3 @@
-.route-wrapper {
-    padding: 5vw 0;
-    margin: 0 auto;
-
-    @include for-tablet {
-        max-width: 97%;
-    }
-    @include for-desktop {
-        max-width: 85%;
-    }
-    @include for-desktop-up {
-        max-width: 70%;
-    }
-    text-align: justify;
-}
 
 .route-grid {
     display: grid;

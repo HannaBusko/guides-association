@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import SimpleSlider from '../components/Slider';
+import AboutBlock from '../components/About';
 import RoutesBlock from '../components/Routes';
 
 const img_set = [ 
@@ -34,6 +35,7 @@ const img_set = [
 const HomePage = () => (
     <Fragment>
         <SimpleSlider images={img_set} />
+        <AboutBlock />
         <RoutesBlock />
     </Fragment>
 );
