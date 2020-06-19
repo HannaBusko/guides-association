@@ -38,7 +38,7 @@ const HomePage = () => (
         <SimpleSlider images={img_set} />
         <AboutBlock />
         <RoutesBlock /> 
-         <ReasonsBlock />
+        <ReasonsBlock />
     </Fragment>
 );
 
