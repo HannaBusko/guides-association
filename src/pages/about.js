@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Button, Icon } from 'semantic-ui-react';
 
 import AboutBlock from '../components/About';
 import { useTranslation } from "react-i18next";
 
+import statement_doc from "../assets/documents/statement.doc";
+import statement_pdf from "../assets/documents/statement.pdf";
 
 const img_about_main = {
     url: require('../assets/images/different/about.group.jpg')
@@ -18,14 +21,14 @@ const img_rules_small = {
     alt: "устав"
 };
 
-const img_join_small ={
-    src: require('../assets/images/different/rules.jpg'),
+const img_join_small = {
+    src: require('../assets/images/different/join.jpg'),
     alt: "устав"
 };
 
 const Title = () => {
     const { t } = useTranslation();
-    return <h1>{t('about_title')}</h1>;
+    return <h1>{t('menu_about')}</h1>;
 }
 
 const HistoryBlock = () => {
@@ -33,7 +36,7 @@ const HistoryBlock = () => {
 
     return (
         <AboutBlock image_main={img_about_main} image_small={img_hystory_small} title={<Title />}>
-            <h2>{t('about_history_title')}</h2>
+            <h2>{t('menu_history')}</h2>
             <p>{t('about_history1')}</p>
             <p>{t('about_history2')}</p>
         </AboutBlock>
@@ -43,7 +46,7 @@ const RulesBlock = () => {
     const { t } = useTranslation();
     return (
         <AboutBlock image_main={img_about_main} image_small={img_rules_small} title={<Title />}>
-            <h2>{t('about_rules_title')}</h2>
+            <h2>{t('menu_rules')}</h2>
             <p>{t('about_rules1')}</p>
             <p>{t('about_rules2')}</p>
             <ul>
@@ -79,14 +82,32 @@ const JoinBlock = () => {
     const { t } = useTranslation();
 
     return (
-        <AboutBlock image_main={img_about_main} image_small={img_join_small} title={<Title />}>
-            <h2>{t('about_join_title')}</h2>
-            <p>{t('about_join1')}</p>
-            <p>{t('about_join2')}</p>
-            <p>{t('about_join3')}</p>
-            <p>{t('about_join4')}</p>
-        </AboutBlock>
+        <Fragment>
+            <AboutBlock image_main={img_about_main} image_small={img_join_small} title={<Title />}>
+                <h2>{t('menu_how_join')}</h2>
+                <p>{t('about_join1')}</p>
+                <p>{t('about_join2')}</p>
+                <p>{t('about_join3')}</p>
+                <p>{t('about_join4')}</p>
+            </AboutBlock>
+            <div className="button-group">
+                <Button.Group size='massive' >
+                    <Button animated='fade' color='blue' size='massive' as='a'
+                        href={statement_doc}>
+                        <Button.Content visible>Заявление на вступление(.doc)</Button.Content>
+                        <Button.Content hidden> <Icon name='down arrow' />Скачать</Button.Content>
+                    </Button>
+                    <Button.Or />
+                    <Button animated='fade' color='teal' size='massive' as='a'
+                        href={statement_pdf}
+                        target="_blank">
+                        <Button.Content visible>Заявление на вступление(.pdf)</Button.Content>
+                        <Button.Content hidden> <Icon name='down arrow' />Скачать</Button.Content>
+                    </Button>
+                </Button.Group>
+            </div>
+        </Fragment>
     )
 };
 
-export { HistoryBlock, RulesBlock,JoinBlock };
+export { HistoryBlock, RulesBlock, JoinBlock };

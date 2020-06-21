@@ -59,3 +59,12 @@
         }
     }
 }
+
+.button-group{
+    text-align: center;
+    .ui.massive.button{
+        @include for-phone {
+            font-size: 1.2rem;
+        }
+    }
+}

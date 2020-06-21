@@ -843,6 +843,15 @@ h4 {
   }
 }
 
+.button-group {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .button-group .ui.massive.button {
+    font-size: 1.2rem;
+  }
+}
+
 .footer-wrapper {
   min-height: 10%;
   bottom: 0;
