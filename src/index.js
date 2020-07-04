@@ -12,6 +12,7 @@ import FooterBlock from './components/Footer';
 
 import { HistoryBlock, RulesBlock, JoinBlock } from '../src/pages/about';
 import BoardBlock from './components/Board';
+import CertificationBlock from './pages/trainings';
 
 //import Social from './components/Social';
 import ScrollToTopBtn from "./components/ScrollToTop";
@@ -32,6 +33,7 @@ const RoutesWrapper = ({ location }) => (
     <Route path='/rules' render={() => <RulesBlock />} />
     <Route path='/join' render={() => <JoinBlock />} />
     <Route path='/board' render={() => <BoardBlock />} />
+    <Route path='/certification' render={() => <CertificationBlock/>} />
     <Redirect to='/' />
   </Switch>
 );

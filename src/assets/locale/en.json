@@ -139,5 +139,11 @@
     "about_team_secretary":"Gaiduk Tatiana",
     "about_team_secretary_text":"",
     "application_title":"Application for membership",
-    "application_download":"Download"
+    "application_download":"Download",
+    "trainings_certification1":"In accordance with the current legislation, only individuals who have passed professional certification and received a certificate of a guide or a guide-interpreter can conduct excursions in the territory of the Republic of Belarus. A guide is a trained adult individual who has the knowledge and professional skills necessary for conducting excursions for participants of tourist activities in Russian or Belarusian. A guide-interpreter is a trained adult individual who is fluent in a foreign language (foreign languages) and has the knowledge and professional skills necessary for conducting excursions for participants of tourist activities in a foreign language.",
+    "trainings_certification2":"The passage of professional certification, which allows to engage in sightseeing activities legally, is regulated by the Decree of the Council of Ministers of the Republic of Belarus No. 895 of 12.07.2007 'On the procedure and conditions for conducting professional certification, confirming the qualifications of guides and guides-interpreters', with additions and changes (Resolution of the Council of Ministers of the Republic of Belarus No. 507 of 06.07.2017).",
+    "trainings_certification3":"The certification is conducted in the form of an exam, which includes computer testing and an oral interview. The purpose of the certification is to check the knowledge of applicants and the ability to apply them during excursions. The schedule of certifications and the commission are determined by the National tourism agency.",
+    "trainings_certification_pdf1":"Resolution of the Council of Minister 2007",
+    "trainings_certification_pdf2":"Resolution of the Council of Minister 2017",
+    "trainings_certification_pdf3":""
 }
