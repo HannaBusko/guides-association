@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Icon } from 'semantic-ui-react';
 
-import AboutBlock from '../components/About';
+import AboutBlock from './About';
 import { useTranslation } from "react-i18next";
 
 import act1 from "../assets/documents/act895.pdf";
