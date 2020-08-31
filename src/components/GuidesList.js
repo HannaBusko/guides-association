@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as guidesActions from '../assets/store/actions/guides';
 import { Card, Icon, Image } from 'semantic-ui-react';
 import axios from 'axios';
 import { useTranslation } from "react-i18next";
+
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as guidesActions from '../assets/store/actions/guides';
+import FilterBlock from './FilterGuides';
+import * as filterLodash from 'lodash/filter';
 
 const img_guides_main = require('../assets/images/different/guides.jpg');
 
@@ -21,7 +24,7 @@ const GuideCard = (guide) => {
         <Image
           floated='left'
           size='small'
-          src={img ??'photo/no-person.png'}
+          src={img ?? 'photo/no-person.png'}
         />
         <Card.Header>
           {name}
@@ -41,7 +44,7 @@ const GuideCard = (guide) => {
       </Card.Content>
       <Card.Content extra>
         <div><Icon name='phone' />{phone} </div>
-        <div><Icon name='envelope open outline' /><a href={"mailto:" +email} >{email}</a></div>
+        <div><Icon name='envelope open outline' /><a href={"mailto:" + email} >{email}</a></div>
       </Card.Content>
     </Card>
   )
@@ -69,8 +72,9 @@ class GuidesList extends Component {
           </div>
         </div>
         <div className="content-wrapper-guides content-wrapper-board">
-          <MenuTitle title='menu_guide-search' tg='h2' />
 
+          <MenuTitle title='menu_guide-search' tg='h2' />
+          <FilterBlock />
           <Card.Group itemsPerRow={3} stackable>
             {
               !isReady ? 'Loading.....' : guides.map((guide, i) => (
@@ -85,15 +89,31 @@ class GuidesList extends Component {
   }
 }
 
-const mapStateToProps = ({ guides }) => ({
-  guides: guides.items,
+const filterLang = (guides, filterBy) =>
+
+  filterLodash(guides, o =>
+    o.lang.toLowerCase().indexOf(filterBy?.value?.toLowerCase()) >= 0
+  );
+
+const filterGuides = (guides, searchQuery) =>
+  filterLodash(guides, o =>
+    o.name.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0 ||
+    o.city.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0 ||
+    o.lang.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0
+  );
+
+const searchGuides = (guides, searchQuery, filterBy) => {
+  return filterLang(filterGuides(guides, searchQuery), filterBy);
+}
+
+const mapStateToProps = ({ guides, filter }) => ({
+  guides: searchGuides(guides.items, filter.searchQuery, filter.filterBy,),
   isReady: guides.isReady
 });
 
 const mapDispatchToProps = dispatch => ({
   ...bindActionCreators(guidesActions, dispatch),
 });
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(GuidesList);
 
