@@ -6,8 +6,9 @@ import { useTranslation } from "react-i18next";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as guidesActions from '../assets/store/actions/guides';
-import FilterBlock from './FilterGuides';
+import FilterBlock from './FilterInterpreters';
 import * as filterLodash from 'lodash/filter';
+import * as isEmptyLodash from 'lodash/isEmpty';
 
 const img_guides_main = require('../assets/images/different/guides.jpg');
 
@@ -53,7 +54,7 @@ const GuideCard = (guide) => {
 class GuidesList extends Component {
   componentDidMount() {
     const { setGuides } = this.props;
-    axios.get('/guides_ru.json').then(({ data }) => {
+    axios.get('/interpreters.json').then(({ data }) => {
       setGuides(data);
     });
   }
@@ -89,11 +90,17 @@ class GuidesList extends Component {
   }
 }
 
-const filterLang = (guides, filterBy) =>
+const filterLanguages = (guides, filterLang) =>
+  isEmptyLodash(filterLang.value) ? guides :
+    filterLodash(guides, o =>
+      filterLang?.value?.some(elem => o.lang.toLowerCase().indexOf(elem.toLowerCase()) >= 0)
+    );
 
-  filterLodash(guides, o =>
-    o.lang.toLowerCase().indexOf(filterBy?.value?.toLowerCase()) >= 0
-  );
+const filterCities = (guides, filterCity) =>
+  isEmptyLodash(filterCity.value) ? guides :
+    filterLodash(guides, o =>
+      filterCity?.value?.some(elem => o.city.toLowerCase().indexOf(elem.toLowerCase()) >= 0)
+    );
 
 const filterGuides = (guides, searchQuery) =>
   filterLodash(guides, o =>
@@ -102,12 +109,12 @@ const filterGuides = (guides, searchQuery) =>
     o.lang.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0
   );
 
-const searchGuides = (guides, searchQuery, filterBy) => {
-  return filterLang(filterGuides(guides, searchQuery), filterBy);
+const searchGuides = (guides, searchQuery, filterLang, filterCity) => {
+  return filterCities(filterLanguages(filterGuides(guides, searchQuery), filterLang), filterCity);
 }
 
 const mapStateToProps = ({ guides, filter }) => ({
-  guides: searchGuides(guides.items, filter.searchQuery, filter.filterBy,),
+  guides: searchGuides(guides.items, filter.searchQuery, filter.filterLang, filter.filterCity),
   isReady: guides.isReady
 });
 

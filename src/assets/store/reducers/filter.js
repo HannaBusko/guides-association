@@ -1,6 +1,7 @@
 const initialState = {
     searchQuery: '',
-    filterBy: { value: "" }
+    filterLang: { value: [""] },
+    filterCity: { value: [""] }
 };
 
 export default (state = initialState, action) => {
@@ -12,11 +13,15 @@ export default (state = initialState, action) => {
                 searchQuery: action.payload
 
             };
-        case 'SET_FILTER':
+        case 'SET_FILTER_L':
             return {
                 ...state,
-                filterBy: action.payload
-
+                filterLang: action.payload
+            };
+        case 'SET_FILTER_C':
+            return {
+                ...state,
+                filterCity: action.payload
             };
         default:
             return state;

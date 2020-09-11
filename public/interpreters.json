@@ -5,7 +5,8 @@
     "email": "nvetik@gmail.com",
     "phone": "+375-29-7541468",
     "lang": "Японский / Japanese; Английский / English",
-    "city": "Минск"
+    "img": "photo/0.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 1,
@@ -13,7 +14,7 @@
     "email": "n.volchanina@mail.ru",
     "phone": "+375-29-6708106",
     "lang": "Английский / English",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 2,
@@ -21,23 +22,24 @@
     "email": "o.gordunina@gmail.com",
     "phone": "+375-29-8505636",
     "lang": "Английский / English",
-    "city": "Минск"
+    "img": "photo/2.jpg",
+    "city": "Минск / Minsk"
   },
-  {
+   {
     "id": 3,
     "name": "Горохов Владимир / Gorokhov Vladimir",
     "email": "vgorokhov@yahoo.com",
     "phone": "+375-29-3961626",
     "lang": "Персидский / Persian; Английский / English",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 4,
-    "name": "Емельянов Сергей / Emelyanov Sergey",
+    "name": "Емельянов Сергей / Jemialjanaŭ Siarhiej",
     "email": "lutavit@gmail.com",
     "phone": "+375-29-7797953",
     "lang": "Польский / Polish",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 5,
@@ -45,7 +47,8 @@
     "email": "zhukyuliya2014@gmail.com",
     "phone": "+375-29-8638280",
     "lang": "Английский / English",
-    "city": "Минск"
+    "img": "photo/5.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 6,
@@ -53,15 +56,16 @@
     "email": "katarina.kovalchuk@gmail.com",
     "phone": "+375-29-8763730",
     "lang": "Турецкий / Turkish; Английский / English",
-    "city": "Минск"
+    "img": "photo/6.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 7,
     "name": "Мащенко Светлана / Maschenko Svetlana",
     "email": "svetamaschenko@mail.ru",
     "phone": "+375-29-7035736",
-    "lang": "Немецкий / German",
-    "city": "Минск"
+    "lang": "Английский / English",
+    "city": "Минск / Minsk"
   },
   {
     "id": 8,
@@ -70,7 +74,7 @@
     "phone": "+375-29-8018635",
     "lang": "Английский / English",
     "img": "photo/8.jpg",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 9,
@@ -78,7 +82,8 @@
     "email": "sokolova.mavie@gmail.com",
     "phone": "+375-29-3598392",
     "lang": "Турецкий / Turkish; Английский / English",
-    "city": "Минск"
+    "img": "photo/9.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 10,
@@ -86,7 +91,7 @@
     "email": "mice.trakt@gmail.com",
     "phone": "+375-29-8365991",
     "lang": "Английский / English; Арабский / Arabic",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 11,
@@ -94,7 +99,7 @@
     "email": "hebrewguidebelarus@yandex.by",
     "phone": "+375-29-1791969",
     "lang": "Иврит / Hebrew",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 12,
@@ -102,7 +107,7 @@
     "email": "camel.email@gmail.com",
     "phone": "+375-29-3857128",
     "lang": "Английский / English",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 13,
@@ -110,7 +115,8 @@
     "email": "inadurysheva@gmail.com",
     "phone": "+375-29-3324610",
     "lang": "Английский / English",
-    "city": "Минск"
+    "img": "photo/13.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 14,
@@ -118,7 +124,7 @@
     "email": "n.monich@gmail.com",
     "phone": "+375-29-3275025",
     "lang": "Испанский / Spanish",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 15,
@@ -127,7 +133,16 @@
     "phone": "+375-29-1534020",
     "lang": "Английский / English",
     "img": "photo/15.jpg",
-    "city": "Минск"
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 16,
+    "name": "Герасимович Надежда / Herasimovich Nadzeya",
+    "email": "nadzeyabeltourism@gmail.com",
+    "phone": "+375-25-7467443",
+    "lang": "Итальянский / Italian",
+    "img": "photo/16.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 17,
@@ -135,7 +150,8 @@
     "email": "volosatovayuliya@mail.ru",
     "phone": "+375-29-7904712",
     "lang": "Английский / English",
-    "city": "Минск"
+    "img": "photo/17.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 18,
@@ -143,7 +159,8 @@
     "email": "malyshka.s@inbox.ru",
     "phone": "+375-29-1773905",
     "lang": "Турецкий / Turkish; Английский / English",
-    "city": "Минск"
+    "img": "photo/18.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 19,
@@ -151,7 +168,8 @@
     "email": "witalij@tut.by",
     "phone": "+375-29-6076674",
     "lang": "Польский / Polish",
-    "city": "Минск"
+    "img": "photo/19.jpg",
+    "city": "Минск / Minsk"
   },
   {
     "id": 20,
@@ -160,7 +178,7 @@
     "phone": "+375-29-7536858",
     "lang": "Английский / English",
     "img": "photo/20.jpg",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 21,
@@ -168,7 +186,7 @@
     "email": "snezhana1908@tut.by",
     "phone": "+375-29-3131908",
     "lang": "Английский / English",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 22,
@@ -177,16 +195,16 @@
     "phone": "+375-29-5775098",
     "lang": "Английский / English",
     "img": "photo/22.jpg",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 23,
     "name": "Авгутис Инна / Awgutis Inna",
-    "email": "GuideBelarus@yandex.by",
+    "email": "inawgutis@gmail.com",
     "phone": "+375-29-8907909",
     "lang": "Польский / Polish",
     "img": "photo/23.jpg",
-    "city": "Витебск"
+    "city": "Витебск / Vitebsk"
   },
   {
     "id": 24,
@@ -195,7 +213,7 @@
     "phone": "+375-44-7037523",
     "lang": "Польский / Polish",
     "img": "photo/24.jpg",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 25,
@@ -203,7 +221,7 @@
     "email": "romannn@tut.by",
     "phone": "+375-29-7040018",
     "lang": "Французский / French; Английский / English",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 26,
@@ -212,14 +230,22 @@
     "phone": "+375-29-3088045",
     "lang": "Английский / English",
     "img": "photo/26.jpg",
-    "city": "Минск"
+    "city": "Минск / Minsk"
   },
   {
     "id": 27,
     "name": "Капариха Дарья / Kaparikha Darya",
     "email": "dorado@tut.by",
     "phone": "+375-29-3748466",
-    "lang": "Французский / French",
-    "city": "Минск"
+    "lang": "Французский / French; Английский / English",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 28,
+    "name": "Коляда Ольга / Kolyada Olga",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-5070755",
+    "lang": "Итальянский / Italian; Немецкий / German",
+    "city": "Минск / Minsk"
   }
 ]

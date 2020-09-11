@@ -3,7 +3,12 @@ export const setSearchQuery = value => ({
     payload:value
 });
 
-export const setFilter = filter => ({
-    type:'SET_FILTER',
+export const setFilterLang = filter => ({
+    type:'SET_FILTER_L',
+    payload:filter
+});
+
+export const setFilterCity = filter => ({
+    type:'SET_FILTER_C',
     payload:filter
 });
