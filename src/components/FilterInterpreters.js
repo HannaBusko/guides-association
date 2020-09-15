@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as filterActions from '../assets/store/actions/filter';
 
-const languages = [
+const languagesLarge = [
   { key: 'ja', text: 'Японский / Japanese', value: 'japanese', image: { avatar: true, src: require('../assets/images/flags/ja-Japanese.png') }, },
   { key: 'en', text: 'Английский / English', value: 'english', image: { avatar: true, src: require('../assets/images/flags/en-English.png') }, },
   { key: 'pr', text: 'Персидский / Persian', value: 'persian', image: { avatar: true, src: require('../assets/images/flags/ir-Iran.png') }, },
@@ -25,6 +25,11 @@ const languages = [
 const citiesSmall = [
   { key: 'mn', text: 'Минск / Minsk', value: 'minsk', },
   { key: 'vt', text: 'Витебск / Vitebsk', value: 'vitebsk', }
+]
+
+const languagesSmall =  [
+  { key: 'ru', text: 'Русский / Russian', value: 'russian', image: { avatar: true, src: require('../assets/images/flags/ru-Russian.png') }, },
+  { key: 'by', text: 'Белорусский / Belarusian', value: 'belarusian', image: { avatar: true, src: require('../assets/images/flags/by-Belarusian.png') }, },
 ]
 
 const citiesLarge = [
@@ -57,14 +62,13 @@ const mapDispatchToProps = dispatch => ({
   ...bindActionCreators(filterActions, dispatch)
 });
 
-
-
-const FilterBlock = ({ searchQuery, setSearchQuery, setFilterLang, setFilterCity }) => {
+const FilterBlock = (filterProps) => {
   const { t } = useTranslation();
+  const {searchQuery, setSearchQuery, setFilterLang, setFilterCity, type} = filterProps;
   return (
     <div className="filter-container">
-      <Dropdown placeholder='Языки' clearable fluid multiple selection options={languages} onChange={(e, { value }) => setFilterLang({ value })} />
-      <Dropdown placeholder='Город' clearable fluid multiple selection options={citiesSmall} onChange={(e, { value }) => setFilterCity({ value })} />
+      <Dropdown placeholder='Языки' clearable fluid multiple selection options={type==='guides' ? languagesSmall :languagesLarge} onChange={(e, { value }) => setFilterLang({ value })} />
+      <Dropdown placeholder='Город' clearable fluid multiple selection options={type==='guides' ? citiesSmall : citiesLarge} onChange={(e, { value }) => setFilterCity({ value })} />
       <Input
         icon="search"
         onChange={e => setSearchQuery(e.target.value)}

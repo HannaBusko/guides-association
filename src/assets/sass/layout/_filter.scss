@@ -6,6 +6,6 @@
         flex-wrap: wrap;
     }
     span {
-        @include font($size: 1.3rem, $family: $fontRoboto, $weight: 400);
+        @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 400);
     }
 }

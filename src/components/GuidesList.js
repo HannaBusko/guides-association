@@ -25,7 +25,7 @@ const GuideCard = (guide) => {
         <Image
           floated='left'
           size='small'
-          src={img ?? 'photo/no-person.png'}
+          src={img ?? 'interpreters/no-person.png'}
         />
         <Card.Header>
           {name}
@@ -54,7 +54,7 @@ const GuideCard = (guide) => {
 class GuidesList extends Component {
   componentDidMount() {
     const { setGuides } = this.props;
-    axios.get('/interpreters.json').then(({ data }) => {
+    axios.get(this.props.fileName).then(({ data }) => {
       setGuides(data);
     });
   }
@@ -74,8 +74,8 @@ class GuidesList extends Component {
         </div>
         <div className="content-wrapper-guides content-wrapper-board">
 
-          <MenuTitle title='menu_guide-search' tg='h2' />
-          <FilterBlock />
+          <MenuTitle title={this.props.title} tg='h2' />
+          <FilterBlock type={this.props.type}/>
           <Card.Group itemsPerRow={3} stackable>
             {
               !isReady ? 'Loading.....' : guides.map((guide, i) => (

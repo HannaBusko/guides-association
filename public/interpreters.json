@@ -5,7 +5,7 @@
     "email": "nvetik@gmail.com",
     "phone": "+375-29-7541468",
     "lang": "Японский / Japanese; Английский / English",
-    "img": "photo/0.jpg",
+    "img": "interpreters/0.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -14,6 +14,7 @@
     "email": "n.volchanina@mail.ru",
     "phone": "+375-29-6708106",
     "lang": "Английский / English",
+    "img": "interpreters/1.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -22,10 +23,10 @@
     "email": "o.gordunina@gmail.com",
     "phone": "+375-29-8505636",
     "lang": "Английский / English",
-    "img": "photo/2.jpg",
+    "img": "interpreters/2.jpg",
     "city": "Минск / Minsk"
   },
-   {
+  {
     "id": 3,
     "name": "Горохов Владимир / Gorokhov Vladimir",
     "email": "vgorokhov@yahoo.com",
@@ -47,7 +48,7 @@
     "email": "zhukyuliya2014@gmail.com",
     "phone": "+375-29-8638280",
     "lang": "Английский / English",
-    "img": "photo/5.jpg",
+    "img": "interpreters/5.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -56,7 +57,7 @@
     "email": "katarina.kovalchuk@gmail.com",
     "phone": "+375-29-8763730",
     "lang": "Турецкий / Turkish; Английский / English",
-    "img": "photo/6.jpg",
+    "img": "interpreters/6.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -73,7 +74,7 @@
     "email": "Julianamikolutskaya@gmail.com",
     "phone": "+375-29-8018635",
     "lang": "Английский / English",
-    "img": "photo/8.jpg",
+    "img": "interpreters/8.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -82,7 +83,7 @@
     "email": "sokolova.mavie@gmail.com",
     "phone": "+375-29-3598392",
     "lang": "Турецкий / Turkish; Английский / English",
-    "img": "photo/9.jpg",
+    "img": "interpreters/9.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -115,7 +116,7 @@
     "email": "inadurysheva@gmail.com",
     "phone": "+375-29-3324610",
     "lang": "Английский / English",
-    "img": "photo/13.jpg",
+    "img": "interpreters/13.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -124,6 +125,7 @@
     "email": "n.monich@gmail.com",
     "phone": "+375-29-3275025",
     "lang": "Испанский / Spanish",
+    "img": "interpreters/14.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -132,7 +134,7 @@
     "email": "dzmitry_marozau@yahoo.com ",
     "phone": "+375-29-1534020",
     "lang": "Английский / English",
-    "img": "photo/15.jpg",
+    "img": "interpreters/15.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -141,7 +143,7 @@
     "email": "nadzeyabeltourism@gmail.com",
     "phone": "+375-25-7467443",
     "lang": "Итальянский / Italian",
-    "img": "photo/16.jpg",
+    "img": "interpreters/16.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -150,7 +152,7 @@
     "email": "volosatovayuliya@mail.ru",
     "phone": "+375-29-7904712",
     "lang": "Английский / English",
-    "img": "photo/17.jpg",
+    "img": "interpreters/17.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -159,7 +161,7 @@
     "email": "malyshka.s@inbox.ru",
     "phone": "+375-29-1773905",
     "lang": "Турецкий / Turkish; Английский / English",
-    "img": "photo/18.jpg",
+    "img": "interpreters/18.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -168,7 +170,7 @@
     "email": "witalij@tut.by",
     "phone": "+375-29-6076674",
     "lang": "Польский / Polish",
-    "img": "photo/19.jpg",
+    "img": "interpreters/19.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -177,7 +179,7 @@
     "email": "lucy.semenova@gmail.com",
     "phone": "+375-29-7536858",
     "lang": "Английский / English",
-    "img": "photo/20.jpg",
+    "img": "interpreters/20.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -194,7 +196,7 @@
     "email": "lkorogodova@gmail.com",
     "phone": "+375-29-5775098",
     "lang": "Английский / English",
-    "img": "photo/22.jpg",
+    "img": "interpreters/22.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -203,7 +205,7 @@
     "email": "inawgutis@gmail.com",
     "phone": "+375-29-8907909",
     "lang": "Польский / Polish",
-    "img": "photo/23.jpg",
+    "img": "interpreters/23.jpg",
     "city": "Витебск / Vitebsk"
   },
   {
@@ -212,7 +214,7 @@
     "email": "liubaja_aliona@mail.ru",
     "phone": "+375-44-7037523",
     "lang": "Польский / Polish",
-    "img": "photo/24.jpg",
+    "img": "interpreters/24.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -229,7 +231,7 @@
     "email": "alexotas@tut.by",
     "phone": "+375-29-3088045",
     "lang": "Английский / English",
-    "img": "photo/26.jpg",
+    "img": "interpreters/26.jpg",
     "city": "Минск / Minsk"
   },
   {

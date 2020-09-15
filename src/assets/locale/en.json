@@ -16,7 +16,8 @@
     "menu_how_join": "How to join",
     "menu_guide": "Guides",
     "menu_guide-main": "Common information",
-    "menu_guide-search": "Guide search",
+    "menu_guide-search": "Guide(interpreter) search",
+    "menu_guide2-search": "Guide search",
     "menu_trainings": "Training",
     "menu_certification": "Certification",
     "menu_professional-development": "Professional development",
@@ -180,5 +181,9 @@
     "contact_form_name": "Name",
     "contact_form_message": "Message",
     "contact_form_send": "Send",
-    "search": "Search"
+    "search": "Search",
+    "guides_about1":"In accordance with the legislation of the Republic of Belarus, the right to conduct excursions around the territory of our country in foreign languages is reserved for persons who have passed professional certification. As a result of this exam, applicants receive the qualification of a guide-interpreter.",
+    "guides_about2":"Guide- interpreter is an adult individual who is fluent in a foreign language and possesses the knowledge and professional skills necessary to conduct excursions to participants in tourist activities in a foreign language.",
+    "guides_about3":"To work as a guide-translator, it is not enough to know a foreign language, it is necessary to understand the culture and traditions of the country from which the tourist has arrived. The guide is obliged to highlight the most important and topical objects that will be of interest to representatives of a particular state. It should establish common historical and cultural ties, emphasize the uniqueness of our history. In contrast to the guide working in the native language, the guide- interpreter pays more attention to the daily life of Belarusians.",
+    "guides_about4":"The guides of the Republic of Belarus are the elite of Belarusian tourism, high-level specialists who will reveal all the sights of the country even for the most demanding tourist."
 }

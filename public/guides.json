@@ -5,6 +5,7 @@
     "email": "wadim2016barabanov@gmail.com",
     "phone": "+375-29-1972888",
     "lang": "Русский / Russian; Белорусский / Belarusian",
+    "img": "guides/0.jpg",
     "city": "Гомель / Gomel"
   },
   {
@@ -13,6 +14,7 @@
     "email": "gidbelarus@gmail.com",
     "phone": "+375-29-6543817",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/1.jpg",
     "city": "Минск / Minsk"
   },
   {
@@ -21,8 +23,8 @@
     "email": "buskosiarhei@gmail.com",
     "phone": "+375-29-7697529",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/2.jpg",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 3,
@@ -30,8 +32,8 @@
     "email": "gaiduchka@gmail.com",
     "phone": "+375-29-8632150",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/3.jpg",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 4,
@@ -40,7 +42,6 @@
     "phone": "+375-25-9046989",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 5,
@@ -48,8 +49,8 @@
     "email": "dvv19582007@gmail.com",
     "phone": "+375-29-1137834",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/5.jpg",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 6,
@@ -58,7 +59,6 @@
     "phone": "+375-29-1024468",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Пинск / Pinsk"
-    
   },
   {
     "id": 7,
@@ -67,7 +67,6 @@
     "phone": "+375-29-7584125",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 8,
@@ -76,7 +75,6 @@
     "phone": "+375-29-3577103",
     "lang": "Русский / Russian",
     "city": "Могилев / Mogilev"
-    
   },
   {
     "id": 9,
@@ -85,7 +83,6 @@
     "phone": "+375-29-5727543",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 10,
@@ -94,7 +91,6 @@
     "phone": "+375-29-6224812",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Могилев / Mogilev"
-    
   },
   {
     "id": 11,
@@ -102,8 +98,8 @@
     "email": "dmitrii.korsakov.msu@mail.ru",
     "phone": "+375-25-6912353",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/11.jpg",
     "city": "Могилев / Mogilev"
-    
   },
   {
     "id": 12,
@@ -112,7 +108,6 @@
     "phone": "+375-29-3215642",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 13,
@@ -120,8 +115,8 @@
     "email": "masalevichm@icloud.com",
     "phone": "+375-29-3351357",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/13.jpg",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 14,
@@ -129,8 +124,8 @@
     "email": "mn_kiev@mail.ru",
     "phone": "+375-29-7173836",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/14.jpg",
     "city": "Гродно / Grodno"
-    
   },
   {
     "id": 15,
@@ -139,16 +134,14 @@
     "phone": "+375-29-6549502",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
-{
+  {
     "id": 16,
     "name": "Бойко Татьяна / Boiko Tatsiana",
     "email": "tania.lev@tut.by",
     "phone": "+375-29-6681917",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 17,
@@ -157,7 +150,6 @@
     "phone": "+375-29-5604465",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 18,
@@ -166,16 +158,14 @@
     "phone": "+375-29-7024284",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Новогрудок / Novogrudok"
-   
   },
   {
-    "id": 19,  
+    "id": 19,
     "name": "Сенькевич Олеся / Senkevich Olesia",
     "email": "oisenkevich@rambler.ru",
     "phone": "+375-29-5536187",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 20,
@@ -199,8 +189,8 @@
     "email": "kareta-brest@mail.ru",
     "phone": "+375-29-8299994",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/22.jpg",
     "city": "Брест / Brest"
-    
   },
   {
     "id": 23,
@@ -209,7 +199,6 @@
     "phone": "tulpan4@yandex.by",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 24,
@@ -218,7 +207,6 @@
     "phone": "+375-29-7620234",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 25,
@@ -227,7 +215,6 @@
     "phone": "+375-29-5571124",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 26,
@@ -236,7 +223,6 @@
     "phone": "+375-44-5329606",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 27,
@@ -245,7 +231,6 @@
     "phone": "+375-29-8657562",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Гомель / Gomel"
-   
   },
   {
     "id": 28,
@@ -254,7 +239,6 @@
     "phone": "+375-29-2554055",
     "lang": "Русский / Russian",
     "city": "Браслав / Braslav"
-    
   },
   {
     "id": 29,
@@ -263,7 +247,6 @@
     "phone": "+375-29-8836385",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Гродно / Grodno"
-    
   },
   {
     "id": 30,
@@ -272,7 +255,6 @@
     "phone": "+375-29-1368101",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 31,
@@ -281,7 +263,6 @@
     "phone": "+375-29-8784899",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 32,
@@ -290,7 +271,6 @@
     "phone": "+375-29-8871442",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 33,
@@ -299,7 +279,6 @@
     "phone": "+375-33-3709916",
     "lang": "Русский / Russian",
     "city": "Браслав / Braslav"
-    
   },
   {
     "id": 34,
@@ -308,7 +287,6 @@
     "phone": "+375-29-6400615",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 35,
@@ -317,7 +295,6 @@
     "phone": "+375-29-3331575",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 36,
@@ -326,7 +303,6 @@
     "phone": "+375-29-2887795",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 37,
@@ -335,9 +311,8 @@
     "phone": "+375-29-7024420",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Пружаны / Pruzhany"
-   
   },
-{
+  {
     "id": 38,
     "name": "Никонович Татьяна / Nikonovich Tatsiana",
     "email": "tosska822@mail.ru",
@@ -352,7 +327,6 @@
     "phone": "+375-44-7139230",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 40,
@@ -361,7 +335,6 @@
     "phone": "+375-44-7493219",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 41,
@@ -370,7 +343,6 @@
     "phone": "+375-29-7646841",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 42,
@@ -379,7 +351,6 @@
     "phone": "+375-29-7016209",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 43,
@@ -388,7 +359,6 @@
     "phone": "+375-44-5323272",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 44,
@@ -396,8 +366,8 @@
     "email": "halinka13@yandex.by",
     "phone": "+375-29-7820411",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/44.jpg",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 45,
@@ -406,16 +376,14 @@
     "phone": "+375-29-3324038",
     "lang": "Русский / Russian",
     "city": "Борисов / Borisov"
-    
   },
   {
-    "id": 46,  
+    "id": 46,
     "name": "Яротов Алексей / Yarotau Alexei",
     "email": "yarotau@gmail.com",
     "phone": "+375-25-6609470",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
-
   },
   {
     "id": 47,
@@ -424,7 +392,6 @@
     "phone": "+375-29-5750257",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 48,
@@ -433,7 +400,6 @@
     "phone": "+375-29-7646708",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Дятлово / Dyatlovo"
-    
   },
   {
     "id": 49,
@@ -442,7 +408,6 @@
     "phone": "+375-29-3635740",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 50,
@@ -451,7 +416,6 @@
     "phone": "+375-29-5765343",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 51,
@@ -459,8 +423,8 @@
     "email": "L.alexa68@yandex.ru",
     "phone": "+375-25-9396353",
     "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/51.jpg",
     "city": "Молодечно / Molodechno"
-    
   },
   {
     "id": 52,
@@ -469,7 +433,6 @@
     "phone": "+375-29-5085045",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 53,
@@ -478,7 +441,6 @@
     "phone": "+375-33-6976011",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Глубокое / Glubokoye"
-
   },
   {
     "id": 54,
@@ -487,7 +449,6 @@
     "phone": "+375-29-5789546",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-   
   },
   {
     "id": 55,
@@ -496,7 +457,6 @@
     "phone": "+375-33-3091640",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Полоцк / Polotsk"
-    
   },
   {
     "id": 56,
@@ -505,7 +465,6 @@
     "phone": "+375-29-1598120",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Пинск / Pinsk"
-   
   },
   {
     "id": 57,
@@ -514,7 +473,6 @@
     "phone": "+375-29-7721691",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
   },
   {
     "id": 58,
@@ -523,7 +481,6 @@
     "phone": "+375-29-8535749",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Логойск / Logoisk"
-   
   },
   {
     "id": 59,
@@ -532,42 +489,37 @@
     "phone": "+375-29-5825181",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Новогрудок / Novogrudok"
-    
   },
   {
-    "id": 60,  
+    "id": 60,
     "name": "Захаренко Екатерина / Zakharenko Ekaterina",
     "email": "guidebelarus@yandex.by",
     "phone": "+375-25-9169180",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
-    
- },
+  },
   {
-    "id": 61,  
+    "id": 61,
     "name": "Храмцова Виктория / Hramtsova Victoria",
     "email": "guidebelarus@yandex.by",
     "phone": "+375-29-2105748",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Минск / Minsk"
- 
- },
+  },
   {
-    "id": 62,  
+    "id": 62,
     "name": "Кривопуст Антон / Krivopust Anton",
     "email": "anton.krivopust@yandex.ru",
     "phone": "+375-29-1176439",
     "lang": "Белорусский / Belarusian; Русский / Russian",
     "city": "Кореличи / Korelichi"
-
- },
+  },
   {
-    "id": 63,  
+    "id": 63,
     "name": "Барковская Оксана / Barkovskaya Oksana",
     "email": "dvv19582007@gmail.com",
     "phone": "+375-29-3021033",
     "lang": "Русский / Russian",
     "city": "Минск / Minsk"
   }
-
 ]
